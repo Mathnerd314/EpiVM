@@ -1,14 +1,8 @@
 #ifndef _STDFUNS_H
 #define _STDFUNS_H
 
-# ifndef WIN32
-#  include <pthread.h>
-#  define GC_THREADS
-# else
-#  define GC_WIN32_THREADS
-# endif
+#include "gc_header.h"
 
-#include <gc/gc.h>
 #include <gmp.h>
 #include <stdio.h>
 #include "closure.h"
